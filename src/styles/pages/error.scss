@@ -21,3 +21,37 @@
     margin-bottom: 80px;
   }
 }
+
+/*************** Responsive Tablets ******************/
+@media (max-width: 700px) {
+  .error {
+    .error-code {
+      font-size: 7rem;
+    }
+    .error-text {
+      font-size: 1.3rem;
+      text-align: center;
+      span {
+        white-space: pre;
+      }
+    }
+  }
+}
+/*************** Responsive Phones ******************/
+@media (max-width: 550px) {
+  .error {
+    .error-code {
+      font-size: 5rem;
+    }
+    .error-text {
+      font-size: 1.1rem;
+      text-align: center;
+      span {
+        white-space: pre;
+      }
+    }
+    a {
+      font-size: 0.9rem;
+    }
+  }
+}

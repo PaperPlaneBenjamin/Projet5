@@ -8,7 +8,9 @@ function Layout() {
   return (
     <div className="layout">
       <header className="layout-header">
-        <img src={kasa} alt="logo de kasa" />
+        <NavLink to="/" className="logo-link">
+          <img src={kasa} alt="logo de kasa" />
+        </NavLink>
         <nav>
           <NavLink to="/">Accueil</NavLink>
           <NavLink to="/about">A Propos</NavLink>

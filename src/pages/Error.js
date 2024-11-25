@@ -6,7 +6,7 @@ function Error() {
     <div className="error">
       <p className="error-code">404</p>
       <p className="error-text">
-        Oups! La page que vous demandez n'existe pas.
+        Oups! La page que <span>vous demandez n'existe pas.</span>
       </p>
       <NavLink to="/">Retourner sur la page d’accueil</NavLink>
     </div>
