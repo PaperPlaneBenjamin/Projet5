@@ -1,0 +1,157 @@
+.slider {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+
+  .carousel-image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 25px;
+      object-fit: cover;
+    }
+
+    .carousel-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 10px;
+      scale: 0.8;
+
+      &.prev {
+        left: 10px;
+      }
+
+      &.next {
+        right: 10px;
+      }
+      &.hidden {
+        display: none;
+      }
+    }
+
+    .carousel-counter {
+      display: flex;
+      justify-content: center;
+      font-size: 16px;
+      font-weight: 500;
+      color: white;
+      background-color: transparent;
+      bottom: 15px;
+      left: 50%;
+      position: absolute;
+    }
+  }
+}
+/*************** Responsive Tablets ******************/
+@media (max-width: 800px) {
+  .slider {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+
+    .carousel-image {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 25px;
+        object-fit: cover;
+      }
+
+      .carousel-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        scale: 0.8;
+
+        &.prev {
+          left: 10px;
+        }
+
+        &.next {
+          right: 10px;
+        }
+        &.hidden {
+          display: none;
+        }
+      }
+
+      .carousel-counter {
+        display: flex;
+        justify-content: center;
+        font-size: 16px;
+        font-weight: 500;
+        color: white;
+        background-color: transparent;
+        bottom: 15px;
+        left: 50%;
+        position: absolute;
+      }
+    }
+  }
+}
+/*/************** Responsive Phones ******************/
+@media (max-width: 500px) {
+  .slider {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+
+    .carousel-image {
+      width: 100%;
+      height: 255px;
+      position: relative;
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+      }
+
+      .carousel-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        scale: 0.4;
+
+        &.prev {
+          left: 10px;
+        }
+
+        &.next {
+          right: 10px;
+        }
+        &.hidden {
+          display: none;
+        }
+      }
+
+      .carousel-counter {
+        display: none;
+      }
+    }
+  }
+}

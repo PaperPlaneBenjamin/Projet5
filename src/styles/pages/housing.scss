@@ -1,0 +1,180 @@
+.housing {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 80%;
+  margin: auto;
+  .carousel {
+    margin-top: 20px;
+    width: 100%;
+    height: 350px;
+  }
+  .housing-box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+    .housing-information {
+      display: flex;
+      flex-direction: column;
+      .housing-h2 {
+        color: #ff6060;
+        margin: 0 0 5px 0;
+        font-size: 2.25rem;
+        font-weight: 500;
+      }
+      p {
+        margin: 0 0 20px 0;
+        font-weight: 500;
+      }
+      .tags {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 5px;
+      }
+    }
+    .housing-profile {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .housing-collapses {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    .equipment-text:first-child {
+      margin-top: 0px;
+    }
+    .equipment-text {
+      margin: 5px 0;
+    }
+    & > * {
+      width: 45%;
+    }
+  }
+}
+
+/*************** Responsive Tablets ******************/
+@media (max-width: 800px) {
+  .housing {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+    margin: auto;
+    .carousel {
+      margin-top: 20px;
+      width: 100%;
+      height: 350px;
+    }
+    .housing-box {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 10px;
+      .housing-information {
+        display: flex;
+        flex-direction: column;
+        .housing-h2 {
+          color: #ff6060;
+          margin: 0 0 5px 0;
+          font-size: 2.25rem;
+          font-weight: 500;
+        }
+        p {
+          margin: 0 0 20px 0;
+          font-weight: 500;
+        }
+        .tags {
+          display: flex;
+          gap: 10px;
+          margin-bottom: 5px;
+        }
+      }
+      .housing-profile {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    .housing-collapses {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 50px;
+      .equipment-text:first-child {
+        margin-top: 0px;
+      }
+      .equipment-text {
+        margin: 5px 0;
+      }
+      & > * {
+        width: 45%;
+      }
+    }
+  }
+}
+/*/************** Responsive Phones ******************/
+@media (max-width: 500px) {
+  .housing {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+    margin: auto;
+    .carousel {
+      margin-top: 20px;
+      width: 100%;
+      height: 255px;
+    }
+    .housing-box {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 100%;
+      margin-bottom: 10px;
+      .housing-information {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .housing-h2 {
+          color: #ff6060;
+          margin: 0 0 5px 0;
+          font-size: 1.25rem;
+          font-weight: 500;
+        }
+        p {
+          margin: 0 0 20px 0;
+          font-weight: 500;
+          font-size: 0.9rem;
+        }
+        .tags {
+          display: flex;
+          gap: 10px;
+          margin-bottom: 5px;
+        }
+      }
+      .housing-profile {
+        display: flex;
+        flex-direction: row-reverse;
+        .rating > * {
+          scale: 0.2;
+        }
+      }
+    }
+    .housing-collapses {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 0;
+      .equipment-text:first-child {
+        margin-top: 0px;
+      }
+      .equipment-text {
+        margin: 5px 0;
+      }
+      & > * {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

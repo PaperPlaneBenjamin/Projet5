@@ -1,0 +1,17 @@
+.rating {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin: 10px;
+  & > * {
+    scale: 0.8;
+  }
+}
+
+@media (max-width: 500px) {
+  .rating {
+    & > * {
+      scale: 0.2;
+    }
+  }
+}

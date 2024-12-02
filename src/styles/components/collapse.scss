@@ -1,0 +1,63 @@
+.collapse {
+  width: 65%;
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0.6rem 1rem;
+    background-color: #ff6060;
+    color: white;
+    border-radius: 5px;
+    img {
+      transition: transform 0.3s linear;
+      scale: 0.8;
+    }
+    .animation {
+      transform: rotate(-180deg);
+    }
+  }
+  .content {
+    padding: 15px;
+    background-color: #f6f6f673;
+    border-radius: 5px;
+  }
+  .visibility {
+    display: none;
+  }
+  .title:hover {
+    cursor: pointer;
+  }
+}
+/*************** Responsive Tablets ******************/
+@media (max-width: 800px) {
+  .collapse {
+    width: 90%;
+    .title {
+      height: 12px;
+      font-size: 1.1rem;
+      padding: 1rem;
+    }
+    .content {
+      font-size: 0.9rem;
+    }
+  }
+}
+/*************** Responsive Phones ******************/
+@media (max-width: 550px) {
+  .collapse {
+    width: 90%;
+    .title {
+      height: 8px;
+      font-size: 0.9rem;
+      padding: 0.8rem 0.9rem;
+      img {
+        scale: 0.7;
+      }
+    }
+    .content {
+      font-size: 0.75rem;
+    }
+  }
+}

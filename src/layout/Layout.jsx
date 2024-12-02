@@ -1,7 +1,6 @@
 import { NavLink, Outlet } from 'react-router-dom';
 import kasa from '../assets/kasa-logo.svg';
 import kasaFooter from '../assets/kasa-logo-footer.svg';
-import '../styles/App.scss';
 import '../styles/index.scss';
 
 function Layout() {

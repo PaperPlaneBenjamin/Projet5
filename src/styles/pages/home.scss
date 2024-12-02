@@ -1,0 +1,60 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .cards-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    .cards {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 3.5%;
+      row-gap: 30px;
+      width: 80%;
+      height: fit-content;
+      background-color: #f6f6f6;
+      border-radius: 25px;
+      padding: 2.3rem 0;
+      margin: 20px 0;
+    }
+  }
+}
+/*************** Responsive Tablets ******************/
+@media (max-width: 800px) {
+  .home {
+    .cards-box {
+      margin-bottom: 17px;
+      .cards {
+        width: 100%;
+        background-color: white;
+        margin: 0;
+        padding: 0.4rem 0;
+        row-gap: 1.2rem;
+        a {
+          width: 90%;
+        }
+      }
+    }
+  }
+}
+/*/************** Responsive Phones ******************/
+@media (max-width: 500px) {
+  .home {
+    .cards-box {
+      margin-bottom: 17px;
+      .cards {
+        width: 90%;
+        background-color: white;
+        margin: 0;
+        padding: 0.4rem 0;
+        row-gap: 1.2rem;
+        a {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

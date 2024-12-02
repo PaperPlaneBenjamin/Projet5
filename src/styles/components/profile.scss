@@ -1,0 +1,33 @@
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 15px;
+  margin-bottom: 10px;
+  .profile-name {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    .first-name,
+    .last-name {
+      margin: 0;
+      color: #ff6060;
+    }
+  }
+  .profile-picture {
+    width: 20vw;
+    height: 20vw;
+    max-width: 4rem;
+    max-height: 4rem;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
