@@ -33,6 +33,24 @@
   cursor: pointer;
 }
 
+@media (min-width: 1400px) {
+  .card {
+    width: 330px;
+    height: 330px;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1399px) {
+  .card {
+    width: 310px;
+    height: 310px;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1199px) {
+  .card {
+    width: 270px;
+    height: 270px;
+  }
+}
 /*************** Responsive Tablets ******************/
 @media (max-width: 800px) {
   .card {

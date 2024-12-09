@@ -11,7 +11,7 @@ import ResetScroll from './components/ResetScroll.jsx';
 
 function App() {
   return (
-    <Router>
+    <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
       <ResetScroll />
       <Routes>
         <Route path="/" element={<Layout />}>

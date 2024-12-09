@@ -48,6 +48,9 @@
       bottom: 15px;
       left: 50%;
       position: absolute;
+      &.hidden {
+        display: none;
+      }
     }
   }
 }
@@ -129,20 +132,19 @@
 
       .carousel-button {
         position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
+        transform: translateY(-135%);
         background: transparent;
         border: none;
         cursor: pointer;
         padding: 10px;
-        scale: 0.4;
+        scale: 0.3;
 
         &.prev {
-          left: 10px;
+          left: -17px;
         }
 
         &.next {
-          right: 10px;
+          right: -17px;
         }
         &.hidden {
           display: none;

@@ -25,6 +25,13 @@
 }
 
 /*************** Responsive Tablets ******************/
+@media (max-width: 800px) {
+  .error {
+    .error-text {
+      text-align: center;
+    }
+  }
+}
 @media (max-width: 700px) {
   .error {
     .error-code {
@@ -32,7 +39,6 @@
     }
     .error-text {
       font-size: 1.3rem;
-      text-align: center;
       span {
         white-space: pre;
       }
@@ -42,8 +48,10 @@
 /*************** Responsive Phones ******************/
 @media (max-width: 550px) {
   .error {
+    gap: 110px;
     .error-code {
-      font-size: 5rem;
+      font-size: 6rem;
+      margin-top: 100px;
     }
     .error-text {
       font-size: 1.1rem;

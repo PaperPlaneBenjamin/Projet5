@@ -11,3 +11,11 @@
   font-weight: bold;
   font-size: 0.9rem;
 }
+@media (max-width: 500px) {
+  .tag {
+    font-size: 0.65rem;
+    height: 4.5vw;
+    border-radius: 5px;
+    padding: 3px 13px;
+  }
+}

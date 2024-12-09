@@ -2,6 +2,7 @@ import '../styles/components/slider.scss';
 import next from '../assets/next.svg';
 import prev from '../assets/prev.svg';
 import { useState } from 'react';
+
 function Slider({ images }) {
   const [currentImage, setCurrentIndex] = useState(0);
 
@@ -15,7 +16,6 @@ function Slider({ images }) {
 
   return (
     <div className="slider">
-      {/* Conteneur de l'image */}
       <div className="carousel-image">
         <img src={images[currentImage]} alt={`Image_${currentImage + 1}`} />
         <button
@@ -34,7 +34,9 @@ function Slider({ images }) {
         >
           <img src={next} alt="bouton suivant" />
         </button>
-        <div className="carousel-counter">
+        <div
+          className={`carousel-counter ${images.length === 1 ? 'hidden' : ''}`}
+        >
           {currentImage + 1}/{images.length}
         </div>
       </div>

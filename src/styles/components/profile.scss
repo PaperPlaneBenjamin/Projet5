@@ -31,3 +31,15 @@
     }
   }
 }
+
+@media (max-width: 500px) {
+  .profile {
+    .profile-name {
+      font-size: 0.9rem;
+    }
+    .profile-picture {
+      width: 10vw;
+      height: 10vw;
+    }
+  }
+}
