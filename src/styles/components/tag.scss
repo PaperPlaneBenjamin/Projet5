@@ -9,7 +9,17 @@
   background-color: #ff6060;
   color: white;
   font-weight: bold;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+}
+@media (min-width: 1500px) {
+  .tag {
+    height: 1.7vw;
+  }
+}
+@media (max-width: 800px) {
+  .tag {
+    height: 4vw;
+  }
 }
 @media (max-width: 500px) {
   .tag {

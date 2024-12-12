@@ -1,17 +1,18 @@
+import PropTypes from 'prop-types';
 import '../styles/components/slider.scss';
 import next from '../assets/next.svg';
 import prev from '../assets/prev.svg';
 import { useState } from 'react';
 
 function Slider({ images }) {
-  const [currentImage, setCurrentIndex] = useState(0);
+  const [currentImage, setCurrentImage] = useState(0);
 
   const handleNext = () => {
-    setCurrentIndex((currentImage + 1) % images.length);
+    setCurrentImage((currentImage + 1) % images.length);
   };
 
   const handlePrev = () => {
-    setCurrentIndex((currentImage - 1 + images.length) % images.length);
+    setCurrentImage((currentImage - 1 + images.length) % images.length);
   };
 
   return (
@@ -44,4 +45,7 @@ function Slider({ images }) {
   );
 }
 
+Slider.propTypes = {
+  images: PropTypes.arrayOf(PropTypes.string).isRequired,
+};
 export default Slider;

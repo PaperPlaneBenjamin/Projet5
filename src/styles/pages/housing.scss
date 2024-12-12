@@ -29,6 +29,7 @@
       }
       .tags {
         display: flex;
+        flex-wrap: wrap;
         gap: 10px;
         margin-bottom: 5px;
       }
@@ -89,7 +90,6 @@
           display: flex;
           gap: 10px;
           margin-bottom: 5px;
-          width: max-content;
         }
       }
       .housing-profile {
@@ -153,6 +153,7 @@
           flex-wrap: wrap;
           gap: 10px;
           margin-bottom: 5px;
+          max-width: 100%;
         }
       }
       .housing-profile {

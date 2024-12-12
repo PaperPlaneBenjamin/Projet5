@@ -1,12 +1,13 @@
 import Rating from '../components/Rating';
 import Profile from '../components/Profile';
 import Tag from '../components/Tag';
-import { useParams } from 'react-router-dom';
-import logements from '../data/logements.json';
-import '../styles/pages/housing.scss';
 import Collapse from '../components/Collapse';
 import Error from './Error';
 import Slider from '../components/Slider';
+
+import { useParams } from 'react-router-dom';
+import logements from '../data/logements.json';
+import '../styles/pages/housing.scss';
 
 function Housing() {
   const { id } = useParams();
@@ -24,8 +25,8 @@ function Housing() {
           <h2 className="housing-h2">{logement.title}</h2>
           <p>{logement.location}</p>
           <div className="tags">
-            {logement.tags.map((tag, index) => (
-              <Tag tag={tag} key={index} />
+            {logement.tags.map((tag) => (
+              <Tag tag={tag} key={tag} />
             ))}
           </div>
         </div>
@@ -40,8 +41,8 @@ function Housing() {
           title="Équipements"
           content={
             <div>
-              {logement.equipments.map((equipment, index) => (
-                <p key={index} className="equipment-text">
+              {logement.equipments.map((equipment) => (
+                <p key={equipment} className="equipment-text">
                   {equipment}
                 </p>
               ))}

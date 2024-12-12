@@ -3,15 +3,10 @@ import PropTypes from 'prop-types';
 import { useState, useEffect } from 'react';
 
 function LandscapeView({ image, text = null }) {
-  const [opacity, setOpacity] = useState('');
+  const [opacity, setOpacity] = useState(null);
 
   useEffect(() => {
-    if (image) {
-      const calculateOpacity = () => {
-        return image.includes('1') ? 'opacity-home' : '';
-      };
-      setOpacity(calculateOpacity());
-    }
+    setOpacity(image && image.includes('1') ? 'opacity-home' : null);
   }, [image]);
 
   return (
