@@ -5,7 +5,7 @@ import '../styles/pages/about.scss';
 
 function About() {
   return (
-    <div>
+    <div className="about">
       <div className="landscape-box">
         <LandscapeView image={landscape2} />
       </div>

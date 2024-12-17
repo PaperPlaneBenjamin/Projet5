@@ -1,3 +1,8 @@
+.layout {
+  main .about {
+    min-height: 80vh;
+  }
+}
 .collapses {
   display: flex;
   flex-direction: column;

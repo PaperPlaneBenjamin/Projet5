@@ -15,7 +15,9 @@ function Layout() {
           <NavLink to="/about">A Propos</NavLink>
         </nav>
       </header>
-      <Outlet className="layout-content" />
+      <main>
+        <Outlet className="layout-content" />
+      </main>
       <footer className="layout-footer">
         <img src={kasaFooter} alt="logo de kasa sombre" />
         <p>© 2020 Kasa. All rights reserved</p>
